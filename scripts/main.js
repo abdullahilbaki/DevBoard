@@ -6,6 +6,7 @@ let completedBtns = document.getElementsByClassName("completed");
 let completedTasks = document.getElementById("completed-tasks");
 let assignedTasks = document.getElementById("assigned-tasks");
 let logs = document.getElementById("logs");
+let clearHistory = document.getElementById("clear-history");
 
 for (let i = 0; i < completedBtns.length; i++) {
     completedBtns[i].addEventListener("click", function () {
@@ -38,7 +39,9 @@ for (let i = 0; i < completedBtns.length; i++) {
 }
 
 
-
+clearHistory.addEventListener("click", function () {
+    logs.innerHTML = "";
+});
 
 
 function disableButton(button) {

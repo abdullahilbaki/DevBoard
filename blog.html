@@ -41,43 +41,72 @@
             <p class="font-semibold text-xl">Question-1: What are the different ways to select an element in the DOM?
             </p>
             <hr class="dashed my-4">
-            <p class="font-medium text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                harum dolor laudantium exercitationem eveniet impedit, nisi voluptate magni incidunt quo suscipit
-                voluptatibus sit excepturi nulla maxime assumenda aliquam deleniti aspernatur.</p>
+            <p class="font-medium text-gray-500 text-lg">Elements on a webpage can be selected in different ways. The
+                most common method is by ID (<code>document.getElementById("myId")</code>), which is like calling
+                someone by
+                their unique name. Another way is by
+                Class (<code>document.getElementsByClassName("myClass")</code>), which selects a group
+                of similar elements. Selecting by Tag (<code>document.getElementsByTagName("p")</code>) is useful when
+                targeting all elements
+                of the same type, like all buttons or paragraphs.
+                <br><br>
+                A more flexible way is using querySelector (<code>document.querySelector(".myClass")</code>), which
+                allows selecting elements the same way CSS does. For
+                multiple elements, querySelectorAll (<code>document.querySelectorAll(".myClass")</code>) can be used.
+            </p>
         </div>
 
         <div class="p-4 rounded-lg bg-white">
             <p class="font-semibold text-xl">Question-2: What is the difference between innerHTML, innerText, and
                 textContent ? </p>
             <hr class="dashed my-4">
-            <p class="font-medium text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                harum dolor laudantium exercitationem eveniet impedit, nisi voluptate magni incidunt quo suscipit
-                voluptatibus sit excepturi nulla maxime assumenda aliquam deleniti aspernatur.</p>
+            <p class="font-medium text-gray-500 text-lg">These three are used to get or change the text inside an
+                element, but they work differently:
+                <br><br>
+                1. innerHTML - Gets or sets the content with HTML tags. <br>
+                2. innerText - Gets only visible text, ignoring hidden elements. <br>
+                3. textContent - Gets all text, even if it's hidden. <br>
+            </p>
         </div>
 
         <div class="p-4 rounded-lg bg-white">
             <p class="font-semibold text-xl">Question-3: What is event delegation in the DOM? </p>
             <hr class="dashed my-4">
-            <p class="font-medium text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                harum dolor laudantium exercitationem eveniet impedit, nisi voluptate magni incidunt quo suscipit
-                voluptatibus sit excepturi nulla maxime assumenda aliquam deleniti aspernatur.</p>
+            <p class="font-medium text-gray-500 text-lg">Instead of adding an event to every small element, the event
+                can be placed on a parent element. This way, when anything inside it is clicked, the parent recognizes
+                the action. This method is useful when handling many similar elements, like a list of buttons or items.
+                It makes the code cleaner and more efficient.</p>
         </div>
 
         <div class="p-4 rounded-lg bg-white">
             <p class="font-semibold text-xl">Question-4: What is event bubbling in the DOM? </p>
             <hr class="dashed my-4">
-            <p class="font-medium text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                harum dolor laudantium exercitationem eveniet impedit, nisi voluptate magni incidunt quo suscipit
-                voluptatibus sit excepturi nulla maxime assumenda aliquam deleniti aspernatur.</p>
+            <p class="font-medium text-gray-500 text-lg">When an event happens on an element inside another element, it
+                first triggers on the smaller one and then moves up to the bigger ones. This process is called
+                <span class="font-bold">event
+                    bubbling</span>.
+                <br><br>
+                For example, clicking a button inside a <code>div</code> first affects the button, then the
+                <code>div</code>, then the entire
+                page. This behavior can be useful in some cases but may also need to be controlled to prevent unwanted
+                effects.
+            </p>
         </div>
 
         <div class="p-4 rounded-lg bg-white">
             <p class="font-semibold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?
             </p>
             <hr class="dashed my-4">
-            <p class="font-medium text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                harum dolor laudantium exercitationem eveniet impedit, nisi voluptate magni incidunt quo suscipit
-                voluptatibus sit excepturi nulla maxime assumenda aliquam deleniti aspernatur.</p>
+            <p class="font-medium text-gray-500 text-lg">If we want to create a new element (like a
+                <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, etc.), we use
+                <code>document.createElement("tagname")</code>.
+                <br><br>
+                For putting it inside an existing element, we can use <code>.appendChild()</code> or
+                <code>.append()</code>, like <code>document.body.appendChild(document.createElement("p"))</code>.
+                <br><br>
+                To delete an element, we use <code>.remove()</code>, like
+                <code>document.getElementById("myDiv").remove()</code>.
+            </p>
         </div>
 
 

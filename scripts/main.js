@@ -1,3 +1,32 @@
+// change background color
+
+const colors = [
+    "red", "orange", "yellow", "lime", "green", "teal", "gray",
+    "cyan", "blue", "indigo", "violet", "purple", "pink", "rose"
+];
+
+let bgColor = document.getElementById("bg-color");
+let body = document.body;
+let lastColor = "";
+
+bgColor.addEventListener("click", function () {
+    let newColor;
+
+    do {
+        newColor = colors[Math.floor(Math.random() * colors.length)];
+    } while (newColor === lastColor);
+
+    lastColor = newColor;
+
+    body.classList.forEach(cls => {
+        if (cls.startsWith("bg-")) {
+            body.classList.remove(cls);
+        }
+    });
+
+    body.classList.add(`bg-${newColor}-200`);
+});
+
 // Today's date
 document.getElementById("today-date").innerText = new Date().toDateString();
 

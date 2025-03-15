@@ -1,8 +1,21 @@
 // change background color
 
 const colors = [
-    "red", "orange", "yellow", "lime", "green", "teal", "gray",
-    "cyan", "blue", "indigo", "violet", "purple", "pink", "rose"
+    "bg-light-sky",
+    "bg-red-200",
+    "bg-orange-200",
+    "bg-yellow-200",
+    "bg-lime-200",
+    "bg-green-200",
+    "bg-teal-200",
+    "bg-gray-300",
+    "bg-cyan-200",
+    "bg-blue-200",
+    "bg-indigo-200",
+    "bg-violet-200",
+    "bg-purple-200",
+    "bg-pink-200",
+    "bg-rose-200"
 ];
 
 let bgColor = document.getElementById("bg-color");
@@ -24,7 +37,7 @@ bgColor.addEventListener("click", function () {
         }
     });
 
-    body.classList.add(`bg-${newColor}-200`);
+    body.classList.add(newColor);
 });
 
 // Today's date

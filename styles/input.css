@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .poppins {
     font-family: "Poppins", serif;
 }
